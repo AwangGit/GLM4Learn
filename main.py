@@ -16,7 +16,7 @@ if __name__ =="__main__":
     data = fetch_data(url)
     if data:
         print("仓库数据拉取成功")
-        print(json.dump(data, indent=4, ensure_ascii=False))
+        print(json.dumps(data, indent=4, ensure_ascii=False))
     else:
         print("仓库数据获取失败")
 
